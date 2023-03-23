@@ -1,0 +1,119 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 1.01em; /* especifica el tamaño de la letra */
+}
+
+header {
+    padding: 1em; /* Espacio entre el contenido y el borde definido del contenedor */
+    background-color: rgb(3, 85, 39); /*Dar color de fondo*/
+    font-size: 1.3em;
+}
+
+header h1 {
+    text-align: center; /*Centrar horizontalmente un bloque de texto*/
+    color: #ffffff; /*Dar color a la letra*/
+}
+
+nav {
+    background-color: lightgreen;
+    font-size: 1.3em;
+}
+
+nav li {
+    padding: 1em 2em;
+}
+
+nav ul {
+    list-style: none; /*Eliminar estilos de las listas*/
+    display: flex; /*display nos ayuda a controlar dónde se va a ver un elemento HTML dentro de la pantalla para estructurar nuestra página web*/
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none; /*Eliminar la decoracion de los a, para que no tengan la linea de subrayado*/
+    color: #000000;
+}
+
+nav li:hover, nav li:focus { /*pseudoclase que permite dar formato a las listas en este caso, luego de pasar por encima con el mouse o hacer focus*/
+    background-color: seagreen;
+    cursor: pointer; /*Convertir cursor*/
+}
+
+h2 {
+    margin-bottom: 1em; /*Margin sirve para dar espacio entre contenedores*/
+    margin-top: 1em;
+}
+
+h3 {
+    padding-bottom: 1em;     
+    padding-top: 1.125em;
+}
+
+figure {
+    width: 40%; /*Definir el ancho*/
+    float: left; /*Para mandar el contenido hacia la izq*/
+    margin-right: 1em;
+}
+
+figure img {
+    width: 100%;
+}
+
+p {
+   padding-bottom: 1.125em;
+   font-size: 1.3em; 
+} 
+
+footer {
+    text-align: center;
+    background-color: lightgreen;
+    position: fixed;
+    bottom: 0em;
+    width: 100%;
+}
+
+footer img {
+    padding-top: .5em;
+    width: 5em;
+}
+
+main {
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    align-items: center;
+    width: 75%;
+}
+
+aside {
+    display: flex;
+    flex-direction: column; /*especifica cómo colocar los objetos flexibles en el contenedor flexible definiendo el eje principal y la dirección*/
+    padding-top: 4em;
+    text-align: center;
+    height: 68.25vh; /*Largo o altura*/
+    justify-content: center; /*define cómo el navegador distribuye el espacio entre y alrededor de los items flex, a lo largo del eje principal de su contenedor*/
+    align-items: center;
+}
+
+aside h2 {
+    margin-bottom: 1.5em;
+}
+
+aside img {
+    width: 15em;
+    
+}
+
+aside figure{
+    margin-bottom: 50px;
+}
+
+aside figure img{
+    border-radius: 10px; /*Dar borde al contenedor*/
+}
